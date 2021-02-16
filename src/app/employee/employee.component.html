@@ -1,1 +1,26 @@
-<p>employee works!</p>
+<p  id="para">This is the employees module.</p>
+<button *ngIf="ngifeg" (click)="clicker()">Click me </button>
+
+<p [ngStyle]="{'color':'red','font-weight':'bolder'}">This is a sentence.</p>
+
+<input type="radio" name="rad" (click) = "changevalue(true)">True
+<input type="radio" name="rad" (click) = "changevalue(false)">False
+
+<div *ngIf = "isvalid; then thenblock ;  else elseblock"></div>
+<ng-template #thenblock>
+    <div>
+        This is a valid data. 
+    </div>
+</ng-template>
+
+
+<ng-template #elseblock>
+    <div *ngIf = "!isvalid">
+        This is not valid.
+    </div>
+</ng-template>
+
+<ul>
+    <li *ngFor = "let a of employees; let i=index; let f=first; let l=last; let e = even; let o = odd"> Index{{i}} Name {{ a.name }} First {{f}} last {{l}} Even {{e}} Odd {{o}}</li>
+</ul>
+
