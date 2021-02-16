@@ -1,4 +1,5 @@
 import { Component, Inject } from '@angular/core';
+import { Router } from '@angular/router';
 import { MyserviceService } from './myservice.service';
 
 @Component({
@@ -9,7 +10,11 @@ import { MyserviceService } from './myservice.service';
 export class AppComponent {
   title = 'AngApp';
 
-  constructor(@Inject(MyserviceService) myserve){
+  constructor(@Inject(MyserviceService) myserve, private router: Router){
     console.log(myserve);
+  }
+
+  showEmployee(){
+    this.router.navigate(['/employee']); 
   }
 }

@@ -19,6 +19,7 @@
         This is not valid.
     </div>
 </ng-template>
+<a [routerLink] = "['/company']">Company </a>
 
 <ul>
     <li *ngFor = "let a of employees; let i=index; let f=first; let l=last; let e = even; let o = odd"> Index{{i}} Name {{ a.name }} First {{f}} last {{l}} Even {{e}} Odd {{o}}</li>

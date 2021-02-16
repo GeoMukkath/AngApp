@@ -1,3 +1,6 @@
 <h1>AngApp</h1>
-<app-employee></app-employee>
+
+<a [routerLink] = "['/employee']">Employee  </a> <br>
+<a [routerLink] = "['/company']">Company </a>
+<button (click) = "showEmployee()">Show Employee</button>
 <router-outlet></router-outlet>

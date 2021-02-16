@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { CompanyModule } from './company/company.module'
 import { MyserviceService } from './myservice.service';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EmployeeComponent
+    EmployeeComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
