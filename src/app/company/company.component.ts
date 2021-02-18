@@ -15,4 +15,5 @@ export class CompanyComponent implements OnInit {
   showTest(){
     this.r.navigate(['/testpage']);
   }
+  
 }
